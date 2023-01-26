@@ -1,0 +1,14 @@
+.contenedorMovi{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,230px);
+    gap: 20px;
+    justify-content: center;
+    padding: 35px;
+}
+
+@media (max-width:560px){
+    .contenedorMovi{
+        grid-template-columns: 100%;
+
+    }
+}

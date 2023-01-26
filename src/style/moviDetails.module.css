@@ -1,0 +1,30 @@
+.conteinerMovi{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    max-width:400px ;
+    height: auto;
+    height: 80%;
+    margin: 15px;
+}
+
+.conteinerMovi p{
+    padding: 0 0 15px 0;
+}
+.moviImg{
+    border-radius: 15px;
+    height: 600px;
+}
+
+.moviDetails{
+    font-size: 1.2rem;
+}
+@media (max-width:560px){
+    .moviImg{
+        width: 90%;
+        height: auto;
+    }
+}

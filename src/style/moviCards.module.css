@@ -1,0 +1,28 @@
+.moviCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+.moviCard p{
+    font-size: 1.2rem;
+}
+.moviCard img{
+    border-radius: 15px;
+}
+
+.moviCard:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease-in;
+}
+
+@media (max-width:560px){
+    .moviCard img{
+        width: 100%;
+        height: auto;
+    }
+}

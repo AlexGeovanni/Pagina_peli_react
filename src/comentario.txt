@@ -1,0 +1,5 @@
+router
+tenemos que instalar la libreria react-router-dom, nos ayuda hacer aplicaciones de una 
+sola pagina.
+
+es para hacer single page application de forma dinamica.
