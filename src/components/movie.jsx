@@ -2,7 +2,7 @@
 import { Movie } from './moviCard'
 import styles from '../style/movies.module.css'
 import {useEffect , useState } from 'react'
-import { get } from '../api/httpsClient';
+import { buscar } from '../api/httpsClient';
 
 
 export function MoviesGrid(){
@@ -10,12 +10,11 @@ export function MoviesGrid(){
     const [movies,setMovies] = useState([]);
     
     useEffect(()=>{
-        get("/discover/movie").then((data )=>{
-            // movies = data.results
-            // console.log(movies)
-            setMovies(data.results)
+        buscar("/discover/movie",(Response)=>{
+            setMovies(Response.results)
         })
     },[])
+    console.log(movies[0])
     return(
         <div className={styles.contenedorMovi}>
             {

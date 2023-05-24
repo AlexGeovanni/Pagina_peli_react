@@ -1,30 +1,75 @@
-.conteinerMovi{
+.bgImg{
+    width: 100%;
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; */
+}
+
+.details{
+    padding: 2rem 4rem;
+    width: 100%;
+    min-height: 90vh;
     margin-top: 20px;
     display: flex;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(193,193,193,0.6) 84%); */
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(108,103,103,0.8) 74%, rgba(153,153,153,0.8) 98%);
     justify-content: center;
-    flex-wrap: wrap;
 }
 .col{
-    max-width:400px ;
     height: auto;
     height: 80%;
     margin: 15px;
 }
+.conteinerMovi h1 span{
+    opacity: .8;
+    font-size: 1.950rem; 
+    font-weight: 400;
+}
+.conteinerMovi .date span{
+    font-size: 1rem;
+}
+.conteinerMovi .date .gener{
+    position: relative;
+    padding-left: 1rem;
+}
+.conteinerMovi .date .gener::before{
+    position: absolute;
+    content: '';
+    top: 8px;
+    left:4px;
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
 
 .conteinerMovi p{
-    padding: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 .moviImg{
     border-radius: 15px;
-    height: 600px;
+    height: 620px;
 }
 
 .moviDetails{
     font-size: 1.2rem;
 }
-@media (max-width:560px){
+
+.conteinerMovi .description{
+    margin-top: 1.5rem;
+}
+
+@media (max-width:760px){
+    .details{
+        padding: .7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .moviImg{
-        width: 90%;
-        height: auto;
+        height: 400px;
+        background-color: antiquewhite;
     }
 }

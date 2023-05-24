@@ -1,0 +1,26 @@
+.content-crew{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.content-crew li {
+    width: 33.33%;
+    list-style: none;
+    padding:1rem 1rem 1rem 0;
+}
+.content-crew li p{
+    font-weight: 700;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 10px;
+}
+
+.content-crew li span{
+    padding: 0;
+    font-size: .950rem;
+    font-style: italic;
+}

@@ -20,9 +20,16 @@
     transition: transform .3s ease-in;
 }
 
-@media (max-width:560px){
+@media screen and (max-width:760px){
+    .moviCard {
+        align-items:start;
+    }
+    .moviCard p{
+        font-size: .9rem;
+    }
     .moviCard img{
         width: 100%;
         height: auto;
+        border-radius: 8px;
     }
 }

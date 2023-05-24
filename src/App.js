@@ -4,13 +4,14 @@ import "./App.css";
 import { BuscaMovi } from "./components/buscadorMovi";
 import { LadingPage } from "./pages/ladingPage";
 import {DetailMovi} from "./pages/movieDetalle"
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
     <Router>
         <header>
         <Link to="/"><h1 className="title">Peliculas</h1></Link>
-        <BuscaMovi />
+        {/* <BuscaMovi /> */}
         </header>
         <main>
           <Routes>
@@ -19,6 +20,7 @@ function App() {
               
           </Routes>
         </main>
+        <Footer />
     </Router>
   );
 }

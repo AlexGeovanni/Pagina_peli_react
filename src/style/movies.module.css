@@ -8,7 +8,9 @@
 
 @media (max-width:560px){
     .contenedorMovi{
-        grid-template-columns: 100%;
+        padding: 10px;
+        
+        grid-template-columns: repeat(auto-fit,150px);;
 
     }
 }
