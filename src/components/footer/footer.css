@@ -1,16 +1,44 @@
 .footer{
-
-    background-color: #111111;
+    border-top:4px solid #000000 ;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 18px;
+}
+.redes{
+    display: flex;
+    gap: 10px;
 }
 .redes img{
-    width: 38px;
-    margin-left: 1rem;
+    width: 40px;
+    transition: all .3s ease-in-out;
+}
+.redes img:hover{
+    transform: scale(1.2);
 }
 
 .footer p{
-    font-size: 1.3rem;
+    max-width: 380px;
+    font-size: 1.1rem;
+}
+
+@media (max-width:768px){
+    .footer{
+        padding: 1rem 1.3rem;
+        gap: 15px;
+    }
+    .redes{
+        gap: 8px;
+    }
+    .redes img{
+        width: 35px;
+    }
+    .redes img:hover{
+        transform: scale(1.1);
+    }
+    .footer p{
+        max-width: 380px;
+        font-size: .9rem;
+    }
 }

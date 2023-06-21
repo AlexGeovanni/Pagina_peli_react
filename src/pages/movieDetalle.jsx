@@ -23,10 +23,14 @@ export function DetailMovi(){
     const Url = `https://image.tmdb.org/t/p/w400${movie.poster_path}`;
     const fecha = movie.release_date;
     const anho = fecha.slice(0,4);
-
+    
     return(
         <div className={styles.conteinerMovi}>
-            <div className={styles.bgImg} style={{backgroundImage:`url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path})`}}>
+            <div 
+            style={{background:`url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path})`,
+            backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"
+            }} 
+            className={styles.bgImg}  >
             <div className={styles.details}  >
                 <img className={`${styles.conteinerMovi} ${styles.moviImg}`} src={Url} alt={movie.title} />
                 <div className={`${styles.col} ${styles.moviDetails}`}>

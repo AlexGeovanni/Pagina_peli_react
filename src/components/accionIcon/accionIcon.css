@@ -25,3 +25,11 @@
 .content-acccionesIcon .video p{
     margin-left: .1rem;
 }
+
+@media (max-width:768px){
+    .content-acccionesIcon div {
+        width: 47px;
+        height: 40px;
+    }
+    
+}

@@ -66,3 +66,23 @@
     color: #020202;
     transition: all .3s ease-in-out;
 }
+
+@media (max-width:768px){
+    .content{
+        margin-top: 2rem;
+        padding: 1rem  .9rem;
+    }
+    .content-actores{
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+        gap: 9px;
+    }
+    .content-actores img{
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+    }
+    .actor div h2{
+        font-size: .9rem;
+        line-height: 15px;
+    }
+}

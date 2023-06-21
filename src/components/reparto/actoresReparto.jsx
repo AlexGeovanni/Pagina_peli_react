@@ -11,11 +11,13 @@ export const Actores =(props)=>{
     useEffect(()=>{
         buscar(`/movie/${id}/credits`,(respuesta)=>{
             setActores(respuesta.cast)
+            console.log(respuesta.cast.length)
         })
     },[id]);
 
     const verMasActores=()=>{
         setValormas(valormas+9)
+        console.log(valormas)
     }
     return(
         <div className="content">

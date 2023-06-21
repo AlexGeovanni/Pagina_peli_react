@@ -16,7 +16,7 @@ export const CrewMovie =(props)=>{
             {
                 Crew.map((crew,i)=>{
                     if(crew.job === "Characters" || crew.job ==="Director" || crew.job==="Screenplay" || crew.job === "Writer"){
-                        return <li>
+                        return <li key={`${crew.name}-${i}`}>
                             <p>{crew.name}</p>
                             <span>{crew.job}</span>
                         </li>

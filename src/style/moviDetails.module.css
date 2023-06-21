@@ -17,6 +17,7 @@
 background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(108,103,103,0.8) 74%, rgba(153,153,153,0.8) 98%);
     justify-content: center;
 }
+
 .col{
     height: auto;
     height: 80%;
@@ -62,7 +63,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(108,103,103,0.8) 74%,
     margin-top: 1.5rem;
 }
 
-@media (max-width:760px){
+@media (max-width:768px){
     .details{
         padding: .7rem;
         flex-wrap: wrap;
@@ -71,5 +72,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(108,103,103,0.8) 74%,
     .moviImg{
         height: 400px;
         background-color: antiquewhite;
+    }
+    .details{
+        padding: 2rem 4rem;
+        width: 100%;
+        min-height: 90vh;
+        margin-top: 20px;
+        display: flex;
+        background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(108,103,103,0.7) 80%, rgba(153,153,153,0.8) 98%); 
     }
 }

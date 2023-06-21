@@ -5,8 +5,6 @@
     flex-wrap: wrap;
 }
 
-
-
 .content-crew li {
     width: 33.33%;
     list-style: none;
@@ -23,4 +21,15 @@
     padding: 0;
     font-size: .950rem;
     font-style: italic;
+}
+
+@media (max-width:768px){
+    .content-crew{
+        margin-top: 1rem;
+    }
+    .content-crew li p{
+        font-size: .9rem;
+        line-height: 18px;
+    }
+    
 }
