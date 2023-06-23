@@ -21,7 +21,9 @@ export const api = axios.create({
         }
 });
 
-export const buscar= async(url,setData)=>{
+// funcion recibe una url y una funcion la cual devuelve el resultado
+export const getPeliculas= async(url,setData)=>{
+    // api.get le pasamos el complemento las urls para ser reutilizable
     const resul = await api.get(url);
     return setData(resul.data);
 }

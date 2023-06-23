@@ -14,8 +14,10 @@ export function Movie ({movi}){
         <div className={styles.moviCard}>
             <Link to={"/movies/"+ movi.id} >
                 <img width={230} height={345} src={Url} alt={movi.title} />
-                <p>{movi.title}</p>
-                <Fecha anho={anho} dia={dia} mes={mes}/>
+                <div className={styles.titles}>
+                    <p>{movi.title}</p>
+                    <Fecha anho={anho} dia={dia} mes={mes}/>
+                </div>
             </Link>
         </div>
     )

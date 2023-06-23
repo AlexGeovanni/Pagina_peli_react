@@ -11,7 +11,7 @@ function App() {
     <Router>
         <header>
         <Link to="/"><h1 className="title">Peliculas</h1></Link>
-        {/* <BuscaMovi /> */}
+        <BuscaMovi />
         </header>
         <main>
           <Routes>

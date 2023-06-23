@@ -1,7 +1,7 @@
 .content{
     margin-top: 4rem;
-    /* background-color: rgb(63, 63, 63); */
     padding: 1rem  2rem;
+    margin-bottom: 1.5rem;
 }
 .content h1{
     margin-bottom: 1rem;
@@ -10,7 +10,7 @@
 .content-actores{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
     gap: 15px;
 }
 

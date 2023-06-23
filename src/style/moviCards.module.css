@@ -1,13 +1,15 @@
 .moviCard{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     row-gap: 20px;
+    flex-wrap: wrap;
     cursor: pointer;
     transition: transform .2s ease-in;
 }
-
+.titles{
+    padding-left:12px ;
+}
 .moviCard p{
     font-size: 1.2rem;
 }
@@ -16,13 +18,20 @@
 }
 
 .moviCard:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: transform .3s ease-in;
 }
+.moviCard:hover img{
+    opacity: .6;
+}
+
 
 @media screen and (max-width:768px){
     .moviCard {
         align-items:start;
+    }
+    .titles{
+        padding-left:5px ;
     }
     .moviCard p{
         font-size: .8rem;

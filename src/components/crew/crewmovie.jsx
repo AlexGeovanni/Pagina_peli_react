@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { buscar } from "../../api/httpsClient";
+import { getPeliculas } from "../../api/httpsClient";
 
 import "./crewMovie.css"
 
@@ -7,7 +7,7 @@ export const CrewMovie =(props)=>{
     const  {id}= props
     const [Crew,setCrew]=useState([]);
     useEffect(()=>{
-        buscar(`/movie/${id}/credits`,(Response)=>{
+        getPeliculas(`/movie/${id}/credits`,(Response)=>{
             setCrew(Response.crew)
         })
     },[id])
