@@ -5,8 +5,7 @@ import "./actores.css"
 
 export const Actores =(props)=>{
     const {id}=props;
-    const [actores,setActores]= useState([]);
-    const [valormas,setValormas]= useState(9)
+    const [actors,setActores]= useState([]);
 
     useEffect(()=>{
         getPeliculas(`/movie/${id}/credits`,(respuesta)=>{
@@ -20,8 +19,8 @@ export const Actores =(props)=>{
             <h1>Reparto principal</h1>
             <div className="content-actores" >
             {
-                actores.map((actor,i)=>{
-                    if(i < valormas && actor.profile_path)return <div className="actor" key={i}>
+                actors.map((actor,i)=>{
+                    if(i < 9 && actor.profile_path)return <div className="actor" key={i}>
                                 {/* <div className="img"> */}
                                     <img src={`https://image.tmdb.org/t/p/w138_and_h175_face${actor.profile_path}`} alt={actor.name} />
                                 {/* </div> */}

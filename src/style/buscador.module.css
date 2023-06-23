@@ -1,6 +1,7 @@
 .conteiner{
     width: 100%;
     display: flex;
+    margin-bottom: 10px;
 }
 .searhBox{
     margin: auto;
@@ -35,6 +36,9 @@
 }
 
 @media screen and (max-width:768px){
+    .conteiner{
+        margin-bottom: 25px;
+    }
     .searh{
         width: 225px;
         padding: 12px 10px;
