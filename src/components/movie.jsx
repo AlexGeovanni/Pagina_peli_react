@@ -12,7 +12,7 @@ import ControllPages from './controllsPages/controlls';
 export function MoviesGrid(){
     const [movies,setMovies] = useState([]);
     const [isLoading,setIsLoading] = useState(false)
-    const [pages,setPages] = useState(2)
+    const [pages,setPages] = useState(1)
 
     const nameMovie= useQuery(); // obtenemos el nombre o el valor para buscar la pelicula
 
@@ -22,14 +22,19 @@ export function MoviesGrid(){
                         '/search/movie?query='+nameMovie : `/discover/movie?page=${pages}`;
         getPeliculas(movieUrl,(Response)=>{
             setMovies(Response.results)
-            setIsLoading(true)
+            setIsLoading(true) 
         })
     },[nameMovie,pages])
 
-    const nextPages=()=>{
-        setPages(pages+1)
+    const nextPages=(value)=>{
+        if(value <=500 && value >=1) setPages(value)
+        
     }
-
+    const resetOrEndPages=(value)=>{
+        setPages(value)
+        
+    }
+    
     return(
         isLoading? 
         <>
@@ -40,7 +45,7 @@ export function MoviesGrid(){
                     })
                 }
             </div>
-            <ControllPages pages={pages} nextPages={nextPages} />
+            <ControllPages pages={pages} nextPages={nextPages} resetOrEndPages={resetOrEndPages} />
         </> : <Loading />
     )
 

@@ -10,7 +10,10 @@ function App() {
   return (
     <Router>
         <header>
-        <Link to="/"><h1 className="title">Inicio</h1></Link>
+          <nav className="nav">
+            <Link to="/"><h1 className="title">Peliculas</h1></Link>
+            <Link to="/"><p >Inicio</p></Link>
+          </nav>
         <BuscaMovi />
         </header>
         <main>

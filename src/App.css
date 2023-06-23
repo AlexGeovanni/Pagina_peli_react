@@ -11,9 +11,45 @@
 body{
   background-color: #222222;
 }
+
+.nav{
+
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav p:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+  color: #dfdfdf;
+}
 .title{
-  padding: 20px 0;
-  margin-bottom: 10px;
   text-align: center;
   font-size: 2rem;
+}
+
+@media (max-width:768px){
+  .nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 15px 20px;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav p {
+    font-size: 1.2rem;
+  }
+  .title{
+    font-size: 1.6rem;
+  }
 }
